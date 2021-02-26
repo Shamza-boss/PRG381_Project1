@@ -18,6 +18,7 @@ public class SignInPage
         //Prompt for password input and read input
         System.out.println("Please enter your password");
         String userPassword = myScanner.nextLine();
+        myScanner.close();
 
         // Static values for username and password (Testing purposes)
         String staticUsername = "Kevin";

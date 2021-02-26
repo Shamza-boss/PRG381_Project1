@@ -61,7 +61,7 @@ public class Datahandler {
             // Retrieve the generated key from the insert. if null then not successfull, if 1 then successfull
             resultSet = prepsInsertProduct.getGeneratedKeys();
 
-            // Print the ID of the inserted row.number of rows?
+            // Print the ID of the inserted row. Ticket number
             while (resultSet.next()) {
                 System.out.println("Generated: " + resultSet.getString(1));
             }
@@ -93,6 +93,6 @@ public class Datahandler {
     }
     public static void main(String[] args){
         //testing that we our connection is successfull
-        insertDataToDB("wedding", "06/06/99", "12", "Home", 3, 2, "Bread", "Kids meal", "Coke", "pudding", "dark", "Admin", "Nhlabathi", "0849879510", 3000, "Yes");
+        //insertDataToDB("wedding", "06/06/99", "12", "Home", 3, 2, "Bread", "Kids meal", "Coke", "pudding", "dark", "Admin", "Nhlabathi", "0849879510", 3000, "Yes");
     }
 }

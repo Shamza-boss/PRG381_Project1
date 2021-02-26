@@ -1,5 +1,8 @@
 package BusinessLogic;
 
+//allows communication to db
+import Database.*;
+
 import java.time.LocalDate;
 import java.time.LocalTime;
 
@@ -191,5 +194,14 @@ public class EventDetails {
 
     public void setEventConfirmed(boolean eventConfirmed) {
         this.eventConfirmed = eventConfirmed;
+    }
+
+    //insert details into database
+
+    public void Save(){
+        Datahandler values = new Datahandler();
+
+        //cant parse boolean values... need to refactor
+        values.insertDataToDB(eventType, eventDate.toString(), eventTime.toString(), venueAdress,  numberOfKids, numberOfAdults, adultMeals ,kidMeals, drinks, dessert, themeType, cusName, cusSurname, cusPhoneNumber, cost, eventConfirmed);
     }
 }

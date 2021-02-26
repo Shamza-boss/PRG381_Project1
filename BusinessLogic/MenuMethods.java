@@ -147,7 +147,7 @@ public class MenuMethods {
           
         System.out.println("would you like to confirm your details \n1.yes \n2.no");
         int yesNo = scan.nextInt();
-
+        
         switch(yesNo){
             case 1:
                 evnDets.setEventConfirmed(true);

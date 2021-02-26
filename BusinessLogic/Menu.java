@@ -11,6 +11,7 @@ class Menu{
         System.out.println("1.Sign in");
         System.out.println("2.Sign up");
         int signTask = scan.nextInt();
+        scan.close();
         while(signTask!=0){
             switch(signTask){
                 case 1:
